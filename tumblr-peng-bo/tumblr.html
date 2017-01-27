@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head>
+       <title id= "h3">{Title}</title>
+        <style>
+        .center{
+            max-width:1280px;margin:auto;}
+        .black{}
+        .p{
+
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+font-family: Avenir-Light;
+font-size: 36px;
+color: black;
+letter-spacing: -3.75px;}
+
+    .h1{font-family:Avenir;
+        color:grey;
+        border-bottom: 5px solid black;
+
+        margin:25px;
+    }
+    .h0{
+        color:white;
+        font-size:80px;
+font-family: Avenir-Black;
+
+background-image: linear-gradient(26deg, #75B5D3 0%, #8ECFE8 56%, #6CFFE3 100%);
+        height:80px;
+    }
+
+    .h3{font-family:Avenir;
+        color:grey;
+    }
+    .text{font-family:Avenir;
+        text-decoration:underline;
+
+        color:grey;}
+
+        .containter{padding-top:50px;
+            width:61.8%;
+            float:right;
+            padding-left:10px;
+        }
+        .left{padding-top:200px;
+            padding-right:5px;
+            width:20%;
+            float:right;
+
+        }
+        .white{height:200px;}
+        @keyframes typing {
+      from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; }
+}
+        </style>
+    </head >
+
+    <body class="center" >
+    <div class= containter>
+    <div class="white"></div>
+    <div class="white"></div>
+    <p class="p">您好,我的朋友。
+
+我是彭勃。<br>Hello,  my  friend.
+I’m  bo.  <br>
+   Hallo, mein Freund. Ich bin bo.<br>こんにちは、友よ。私はボです。<br></p>
+    <div class="white"></div>
+
+<div class="h0">{Title}</div>
+        {block:Description}
+            <p class="h3">{Description}</p>
+        {/block:Description}
+         <div class="white"></div>
+
+
+        <ol id="posts">
+            {block:Posts}{block:Text}
+                    <li class="text">
+                        {Body}
+                         {block:Date}{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}{/block:Date}
+                    </li>
+                {/block:Text}{block:Photo}
+                    <li class="h1">
+                        <img src="{PhotoURL-500}" alt="{PhotoAlt}"/>
+
+                        {block:Caption}
+
+                            <div class="h3">{Caption}</div>
+                            {block:Date}{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}{/block:Date}
+                        {/block:Caption}
+                    </li>
+                {/block:Photo}
+                {block:Photoset}
+                    <li class="h1">
+                        {Photoset-500}{block:Caption}
+                            <div class="h3">{Caption}</div>
+                             {block:Date}{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}{/block:Date}
+                        {/block:Caption}
+                    </li>
+                {/block:Photoset}
+                {block:Panorama}
+                    <li class="h1">
+                        {LinkOpenTag}
+                            <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                        {LinkCloseTag}{block:Caption}
+                            <div class="caption">{Caption}</div>
+                             {block:Date}{DayOfMonthWithZero}/{MonthNumberWithZero}/{Year}{/block:Date}
+                        {/block:Caption}
+                    </li>
+                {/block:Panorama}
+                {/block:Posts}
+        </ol>
+
+        <p id="footer">
+            {block:PreviousPage}
+                <a href="{PreviousPage}">&#171; Previous</a>
+            {/block:PreviousPage}{block:NextPage}
+                <a href="{NextPage}">Next &#187;</a>
+            {/block:NextPage}
+
+
+        </p>
+
+    </div>
+
+    <div class="left">
+    <div class="white"></div><div class="white"></div><div class="white"></div>
+
+
+<svg width="173px" height="173px" viewBox="2278 1209 173 173" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.25781251%" y1="49.7500002%" x2="101.257813%" y2="49.7500002%" id="linearGradient-1">
+            <stop stop-color="#1800FF" offset="0%"></stop>
+            <stop stop-color="#A4FF01" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-3" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <rect id="path-4" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-5" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-4"></use>
+        </mask>
+        <rect id="path-6" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-7" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-6"></use>
+        </mask>
+        <rect id="path-8" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-9" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-8"></use>
+        </mask>
+        <rect id="path-10" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-11" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-10"></use>
+        </mask>
+        <rect id="path-12" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-13" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-12"></use>
+        </mask>
+        <rect id="path-14" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-15" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-14"></use>
+        </mask>
+        <rect id="path-16" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-17" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-16"></use>
+        </mask>
+        <rect id="path-18" x="2.79172846" y="67.8305566" width="167.416543" height="37.3388869" rx="18.6694434"></rect>
+        <mask id="mask-19" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="167.416543" height="37.3388869" fill="white">
+            <use xlink:href="#path-18"></use>
+        </mask>
+    </defs>
+    <g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(2364.500000, 1295.500000) rotate(180.000000) translate(-2364.500000, -1295.500000) translate(2278.000000, 1209.000000)">
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-3)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(90.000000) translate(-86.500000, -86.500000) " xlink:href="#path-2"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-5)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(80.000000) translate(-86.500000, -86.500000) " xlink:href="#path-4"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-7)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(70.000000) translate(-86.500000, -86.500000) " xlink:href="#path-6"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-9)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(60.000000) translate(-86.500000, -86.500000) " xlink:href="#path-8"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-11)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(50.000000) translate(-86.500000, -86.500000) " xlink:href="#path-10"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-13)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(40.000000) translate(-86.500000, -86.500000) " xlink:href="#path-12"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-15)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(30.000000) translate(-86.500000, -86.500000) " xlink:href="#path-14"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-17)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(20.000000) translate(-86.500000, -86.500000) " xlink:href="#path-16"></use>
+        <use id="Rectangle" stroke="url(#linearGradient-1)" mask="url(#mask-19)" stroke-width="2" transform="translate(86.500000, 86.500000) rotate(10.000000) translate(-86.500000, -86.500000) " xlink:href="#path-18"></use>
+    </g>
+</svg>
+
+    </div>
+
+
+    </body>
+</html>

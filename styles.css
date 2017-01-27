@@ -1,0 +1,256 @@
+
+/********************* NOTES ************************
+I have included font awesome. The font for it is in the
+fonts folder and the css for it is in the fontawesomecss
+folder and imported below.
+****************************************************/
+
+@import 'fontawesomecss/font-awesome.min.css';
+/************* Eric Meyer CSS Reset ***************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+	
+}
+i { 
+	color: #FFFF00 ; 
+
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/******** Additional resets *********/
+a { text-decoration: none; }
+em { font-style: italic; }
+strong { font-weight: bold;}
+img { max-width: 100% }
+* { box-sizing: border-box; }
+
+/************** End CSS Reset ************/
+
+body {
+	font-family: 'Work Sans', sans-serif;
+	color:#333;
+	background:#333;
+}
+
+.wrapper {
+	width:1020px;
+	margin:auto;
+	overflow:hidden;
+	padding:20px 0;
+}
+
+#work {
+	background:#fff;
+}
+
+/*********** Colors ***********
+
+primary = #b5b5b5;
+secondary = #efefef;
+accent = #4574b5
+text default = #333333;
+
+********************************/
+
+.primary { background:white; }
+.secondary { background:#efefef; }
+
+/****************** Grid ******************/
+
+.row { overflow:hidden; margin-bottom: 40px; }
+.column { float: left; margin-left:4%; }
+.column:first-of-type { margin-left:0; }
+
+.full { width: 100%; }
+.half { width: 48%;}
+.one-quarter { width:22%; }
+.one-third { width:30.6666666667%; }
+.two-thirds { width:65.3333333333%; }
+.three-quarters { width:74.0%; }
+
+/************* typography ************/
+
+h1, h2, h3, h4, nav {
+	font-family: 'Work Sans', sans-serif;
+	font-weight:bold;
+}
+
+h1 {
+	font-size:250%;
+	margin-bottom:1em;
+}
+
+h2 {
+	font-size:170%;
+	margin-bottom:1em;
+}
+
+h3 {
+	font-size:135%;
+	margin-bottom:1em;
+}
+
+h4 {
+	font-size:115%;
+	margin-bottom:.5em;
+}
+
+
+p {
+	line-height:1.5em;
+	margin-bottom:1em;
+}
+
+a { color: #4574b5; }
+
+.social { font-size:175%; }
+
+.centered { text-align:center; }
+#footer{
+	background: #26282D;
+	color:white;
+}
+.p1{
+	background: #FFFF00;
+}
+
+/*************** Header and Main Navigation *************/
+
+#logo {
+	float:left;
+	margin-left:80px;
+	margin-right:20px;
+	width: 100px;
+	height: 100px;
+}
+#footerlogo {
+	width: 50px;
+	height: 50px;
+}
+#name{
+	height: 100px;
+	float: left;
+} 
+
+
+#mainnav {
+	width:100%;
+	float:right;
+	background:#26282D;
+}
+
+#mainnav ul li {
+	float:left;
+	width:25%;
+	text-align: center;
+	padding-top: 15px;
+	height: 60px;
+}
+#mainnav ul li:first-child{
+	background: #FFFF00 ;
+
+}
+
+
+#mainnav ul li a {
+	display:inline-block;
+	color: #FFFF00;
+/*	border-left: 2px solid #4574b5;*/
+	padding: 0px;
+	font-size:20px;
+	height: 60px;
+	width:25%;
+}
+#mainnav ul li:hover a{
+	color: black;
+
+
+}
+#mainnav ul li:hover{
+    background: linear-gradient(90deg, #F7981C 0%, #FFFF00 100%);
+}
+
+/********************* Media Queries ************************/
+@media (max-width: 1020px){
+
+	.wrapper {
+		width:95%;
+		margin-left: auto;
+    	margin-right: auto;
+		padding: 20px 15px;
+	}
+	   #name {
+    	height: 50px;
+    	margin-left: auto;
+    	margin-right: auto;
+
+
+    }
+    #logo {
+    	height: 50px;
+    	width: 50px;
+    	margin-left: auto;
+    	margin-right: auto;
+    }
+
+}
+@media  (max-width: 400px) {
+    /* For mobile phones: */
+    [class*="column "] {
+        width: 100%;
+        margin-left: auto;
+    	margin-right: auto;
+    }
+   
+ 
+    #mainnav ul li {
+    display: inline;
+    width: 100%;
+    height:40px;
+	}
+	.wrapper {
+		margin-left: auto;
+    	margin-right: auto;
+		padding: 20px 15px;
+	}
+}

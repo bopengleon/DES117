@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.header {
+    /* Matters: */
+    font-family: AvenirNext-Medium;
+    font-size: 72px;
+    letter-spacing: -10px;
+    color: #4A4A4A;
+    height: 150px;
+}
+
+.headerLeft {
+    float: left;
+    clear;
+    color: black;
+    width: 61.8%;
+    height: 100px;
+    text-decoration: none;
+}
+.logoRight{
+  background: grey;
+  width: 100px;
+  height: 100px;
+  float:right;
+  padding-left:30px;
+  padding-top: 30px;
+
+}
+
+.headerRight{
+    float:right;
+    font-size: 54px;
+    letter-spacing: -5px;
+    color: #CF96A1;
+    font-family: AvenirNext-UltraLight;
+
+}
+
+.headerLeft:hover {
+    color: #FF5ED1;
+}
+
+.archi {
+    float: right;
+    clear: both;
+    color: white;
+    padding-top: 520px;
+    font-size: 144px;
+}
+
+.showcase {
+    clear: both;
+    width: 100%;
+    height: 650px;
+    padding-bottom: 50px;
+    background-image: url(./img/showcase.jpg);
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: white;
+    /* photo-1442406964439-e46ab8eff7c4: */
+}
+
+.past {
+    line-height: 24px;
+    width: 25%;
+    height: 200px;
+    float: left;
+    clear: right;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: #4A4A4A;
+    letter-spacing: -3px;
+    text-decoration: none;
+    padding-top: 50px;
+}
+
+.now {
+    width: 25%;
+    height: 200px;
+    float: left;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: #4A4A4A;
+    letter-spacing: -3px;
+    line-height: 24px;
+    text-decoration: none;
+      padding-top: 50px;
+}
+
+.future {
+    width: 25%;
+    height: 200px;
+    float: left;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: #4A4A4A;
+    letter-spacing: -3px;
+    line-height: 24px;
+    text-decoration: none;
+      padding-top: 50px;
+}
+
+.p1 {
+    padding-left: 4;
+    padding-top: 50px;
+    background-image: url(./img/pexels-photo-99626.jpg);
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: #4A4A4A;
+    letter-spacing: -3px;
+    line-height: 24px;
+}
+
+.p2 {
+    text-decoration:none;
+    background-color: grey;
+    width: 33.33%;
+    height: 200px;
+    float: left;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    padding-top: 140px;
+    padding-left: 20px;
+    color: white;
+    letter-spacing: -3px;
+    line-height: 24px;
+    text-align: center;
+
+}
+
+.p2:hover{
+  color: white;
+  /* Rectangle 3: */
+  background-image: linear-gradient(-36deg, #FF2323 38%, #FF5ED1 100%);
+
+}
+.p3 {
+    background-image: url(./img/black-and-white-architecture.jpg);
+    width: 33.33%;
+    height: 200px;
+    background-size: auto;
+    float: left;
+    font-family: AvenirNext-UltraLight;
+    font-size: 48px;
+    color: #4A4A4A;
+    letter-spacing: -3px;
+    line-height: 24px;
+}
+
+
+
+.past:hover {
+    color: white;
+    /* Rectangle 3: */
+    background-image: linear-gradient(-36deg, #FF2323 38%, #FF5ED1 100%);
+}
+
+.now:hover {
+    color: white;
+    /* Rectangle 3: */
+    background-image: linear-gradient(-36deg, #FF2323 38%, #FF5ED1 100%);
+}
+
+.future:hover {
+    /* Rectangle 3: */
+    color: white;
+    background-image: linear-gradient(-36deg, #FF2323 38%, #FF5ED1 100%);
+}
+
+.house {
+    /* Rectangle 27: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 28: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 29: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 29: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 29: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 29: */
+    border: 1px solid #F9F9F9;
+    /* Rectangle 29: */
+    border: 1px solid #F9F9F9;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+.imgLeft{
+  width: 40%;
+  display:inline-block;
+    position:relative;
+    clear:both;
+    float:left;
+}
+
+.textRight{
+  padding-left: 50px;
+  width:60%;
+  float:right;
+  font-family: AvenirNext-Medium;
+  font-size: 30px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    clear: both;
+    height: 100px;
+    padding-top: 20px;
+    background-color: black;
+    font-family: AvenirNext-UltraLight;
+}
